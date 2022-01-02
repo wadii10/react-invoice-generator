@@ -1,18 +1,22 @@
 import { ProductLine, Invoice } from './types'
 
 export const initialProductLine: ProductLine = {
+  ref:'',
   description: '',
   quantity: '1',
-  rate: '0.00',
+  prix: '0.00',
+  remise:0,
+  total:0,
+  tva:0
 }
 
 export const initialInvoice: Invoice = {
   logo: '',
   logoWidth: 100,
-  title: 'INVOICE',
-  companyName: '',
+  title: 'Facture',
+  companyName: 'Ellouze',
   name: '',
-  companyAddress: '',
+  companyAddress: 'Tunisie',
   companyAddress2: '',
   companyCountry: 'United States',
   billTo: 'Bill To:',
@@ -30,19 +34,13 @@ export const initialInvoice: Invoice = {
   productLineQuantity: 'Qty',
   productLineQuantityRate: 'Rate',
   productLineQuantityAmount: 'Amount',
+  productLineRef:'Ref',
   productLines: [
-    {
-      description: 'Brochure Design',
-      quantity: '2',
-      rate: '100.00',
-    },
-    { ...initialProductLine },
-    { ...initialProductLine },
+   
   ],
   subTotalLabel: 'Sub Total',
-  taxLabel: 'Sale Tax (10%)',
   totalLabel: 'TOTAL',
-  currency: '$',
+  currency: 'TND',
   notesLabel: 'Notes',
   notes: 'It was great doing business with you.',
   termLabel: 'Terms & Conditions',

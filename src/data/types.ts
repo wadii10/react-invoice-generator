@@ -1,18 +1,22 @@
 import { CSSProperties } from 'react'
 
 export interface ProductLine {
+  ref: string,
   description: string
-  quantity: string
-  rate: string
+  quantity: string,
+  tva: number,
+  remise: number,
+  prix: string,
+  total: number
 }
 
 export interface Invoice {
   logo: string
   logoWidth: number
   title: string
-  companyName: string
+  companyName: 'Ellouze'
   name: string
-  companyAddress: string
+  companyAddress: 'Tunisie'
   companyAddress2: string
   companyCountry: string
 
@@ -29,15 +33,15 @@ export interface Invoice {
   invoiceDueDateLabel: string
   invoiceDueDate: string
 
+  productLineRef: string
   productLineDescription: string
   productLineQuantity: string
   productLineQuantityRate: string
   productLineQuantityAmount: string
-
+  
   productLines: ProductLine[]
 
   subTotalLabel: string
-  taxLabel: string
 
   totalLabel: string
   currency: string
