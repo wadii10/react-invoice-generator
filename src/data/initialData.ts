@@ -5,9 +5,8 @@ export const initialProductLine: ProductLine = {
   description: '',
   quantity: '1',
   prix: '0.00',
-  remise:0,
-  total:0,
-  tva:0
+  remise:'0',
+  tva:'0'
 }
 
 export const initialInvoice: Invoice = {
@@ -18,23 +17,25 @@ export const initialInvoice: Invoice = {
   name: '',
   companyAddress: 'Tunisie',
   companyAddress2: '',
-  companyCountry: 'United States',
-  billTo: 'Bill To:',
+  companyCountry: 'Tunisie',
+  billTo: 'Client:',
   clientName: '',
   clientAddress: '',
   clientAddress2: '',
-  clientCountry: 'United States',
-  invoiceTitleLabel: 'Invoice#',
+  clientCountry: 'Tunisie',
+  invoiceTitleLabel: 'Facture N°',
   invoiceTitle: '',
-  invoiceDateLabel: 'Invoice Date',
+  invoiceDateLabel: 'Date',
   invoiceDate: '',
   invoiceDueDateLabel: 'Due Date',
   invoiceDueDate: '',
-  productLineDescription: 'Item Description',
+  productLineDescription: 'Description',
   productLineQuantity: 'Qty',
-  productLineQuantityRate: 'Rate',
-  productLineQuantityAmount: 'Amount',
+  productLineQuantityRate: 'Prix',
+  productLineQuantityAmount: 'Total TTC',
   productLineRef:'Ref',
+  productLineRemise:'Remise',
+  productLineTva:'TVA',
   productLines: [
    
   ],

@@ -4,10 +4,9 @@ export interface ProductLine {
   ref: string,
   description: string
   quantity: string,
-  tva: number,
-  remise: number,
-  prix: string,
-  total: number
+  tva: string,
+  remise: string,
+  prix: string
 }
 
 export interface Invoice {
@@ -38,6 +37,8 @@ export interface Invoice {
   productLineQuantity: string
   productLineQuantityRate: string
   productLineQuantityAmount: string
+  productLineRemise: string
+  productLineTva: string
   
   productLines: ProductLine[]
 
